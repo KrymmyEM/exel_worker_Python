@@ -2,8 +2,8 @@ import openpyxl
 from openpyxl import Workbook
 from openpyxl.worksheet.worksheet import Worksheet
 
-def get_data_in_exel(uid, wbkid) -> dict:
-    path = f"documents/{fileName}.xlsx"
+def get_data_in_exel(fileName) -> dict:
+    path = f"{fileName}.xlsx"
 
     workBook: Workbook = openpyxl.load_workbook(path)
     workSheet: Worksheet = None
